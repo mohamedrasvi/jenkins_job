@@ -60,13 +60,16 @@ Access Jenkins at the external IP of the Jenkins service, then configure authent
 Step 2: Create a Terraform Module to Deploy a Static Website on GCS
 Module Folder Structure:
 
-css
-Copy code
+
+```
 terraform/
 └── gcs-website/
     ├── main.tf
     ├── variables.tf
     └── outputs.tf
+
+
+```
 
 Set Up GitHub Actions to Trigger Jenkins Builds
 Create GitHub Action Workflow
