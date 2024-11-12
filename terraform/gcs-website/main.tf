@@ -12,7 +12,7 @@ resource "google_storage_bucket" "website_bucket" {
 resource "google_storage_bucket_object" "index" {
   name         = "index.html"
   bucket       = google_storage_bucket.website_bucket.name
-  source       = "path/to/local/index.html"
+  source       = "${path.module}/index.html"
   content_type = "text/html"
 }
 
